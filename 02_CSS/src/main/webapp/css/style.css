@@ -1,7 +1,0 @@
-@charset "UTF-8";
-
-span { 
-	font-size: 20px; /*글자 크기 속성*/
-	font-weight: bold; /*글자 진하게 하는 속성*/
-	color: red;		/*글자 색상*/
-	}
