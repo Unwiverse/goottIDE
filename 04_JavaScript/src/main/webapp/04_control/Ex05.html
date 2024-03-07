@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+ 	난수를 발생시켜서 추첨을 통해 경품을 받게 만들어보자
+ 	
+ 	<요구사항> 
+ 	- 1~10 사이의 숫자를 랜덤하게 뽑게하자.
+ 	- 3번: 냉장고 당첨 /5번: 노트북 당첨 /8번: 글카 당첨
+ 	- 그 외의 번호는 "도무지 이해가 안됩니닼ㅋㅋㅋㅋㅋㅋ"
+ 	
+ 	- 난수를 발생시키는 함수
+ 	  Math.floor(Math.random()*마지막 숫자) +시작 숫자
+ */
+ 	let boom = "도무지 이해가 안됩니닼ㅋㅋㅋㅋㅋㅋ"
+ 	let luckyNum = Math.floor(Math.random()*10)+1;
+ 	switch(luckyNum) {
+ 	case 3: 
+ 		document.write(`냉장고 당첨 <br>`);
+ 		break;
+ 	case 5:
+ 		document.write(`노트북 당첨 <br>`);
+ 		break;
+ 	case 8: 
+ 		document.write(`그래픽카드 당첨 <br>`);
+ 		break;
+ 	default:
+ 		document.write(boom);
+ 	
+ 	
+ 	}
+ 
+ 
+</script>
+</head>
+<body>
+
+</body>
+</html>

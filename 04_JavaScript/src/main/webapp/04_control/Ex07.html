@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/*
+	문제) 1~100 사이의 숫자 중 4의 배수면서 동시에 6의 배수인 숫자를 화면에 ㄱ
+		 (조건) while 써라
+	*/
+	let num = 1;
+	while(num <= 100) {
+		if(num % 4 === 0 && num % 6 === 0) {
+			document.write(`num: ${num} <br>`); 
+		}
+		num++;
+	}
+	document.write(`<hr>`);
+		
+	
+	
+	/*
+	문제) 1~100 사이의 숫자 중 홀수면 글자를 빨간색으로 짝수면 글자를 파란색으로
+		 화면(브라우저)에 ㄱ
+	*/
+	num = 1;
+	while(num <=100) {
+		if(num%2==1) {
+			document.write(`<span style="color:red">${num}</span> `)
+		  //document.write(`<font color='red'>${num}</font> &nbsp&nbsp&nbsp&nbsp`);
+		} else {
+			
+			document.write(`<span style="color:blue">${num}</span> `)
+		}
+		num++;
+		
+	}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

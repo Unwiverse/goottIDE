@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+		/*
+			관계(비교) 연산자
+			- >=, >, <=, ==, !=, ===
+			- 관계 연산자와 결과는 항상 boolean 형으로 나온다.
+			
+		*/
+	let su1 = 10, su2 =4;
+		document.write(`${su1}=${su2}: ${(su1 >= su2)} <br>`);
+		document.write(`${su1}=${su2}: ${(su1 > su2)} <br>`);
+		document.write(`${su1}=${su2}: ${(su1 <= su2)} <br>`);
+		document.write(`${su1}=${su2}: ${(su1 < su2)} <br>`);
+		document.write(`${su1}=${su2}: ${(su1 == su2)} <br>`);
+		document.write(`${su1}=${su2}: ${(su1 != su2)} <br>`);
+		document.write(`<hr>`);
+	
+	let su3 = "1000";
+	let su4 = 1000;
+	
+	/*
+	== (동등연산자)
+	- 동등연산자는 비교대상 값의 자료형이 다르면 박력있게
+	  형을 바꾼 뒤에 비교를 함.
+	- 좌변향과 우변향을 비교해 값이 자료형은 생까고 데이터가 같으면
+	  true를 반환하고 다르면 false를 반환함.
+	*/
+	document.write(`${su3} == ${su4}: ${(su3==su4)} <br>`);
+	/*
+	===(일치연산자)
+	- 일치 연산자는 좌변향과 우변향의 내용이 정확하게 같을 때 true
+	  다르면 false를 반환함. 즉, 좌변향과 우변향이 서로 자료형까지 일치하면
+	  true, 아니면 false를 반환함.
+	*/
+	document.write(`${su3} === ${su4}: ${(su3===su4)} <br>`);
+	
+	document.write(`${su3}>=${su4}: ${(su3 >= su4)} <br>`);
+	document.write(`${su3}>${su4}: ${(su3 > su4)} <br>`);
+	document.write(`${su3}<=${su4}: ${(su3 <= su4)} <br>`);
+	document.write(`${su3}<${su4}: ${(su3 < su4)} <br>`);
+	document.write(`${su3}==${su4}: ${(su3 == su4)} <br>`);
+	document.write(`${su3}!=${su4}: ${(su3 != su4)} <br>`);
+		
+</script>
+</head>
+<body>
+
+</body>
+</html>
