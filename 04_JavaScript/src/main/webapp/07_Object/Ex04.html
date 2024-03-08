@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	/*
+	[문제] 학생 객체에 대한 정보를 키보드로 입력받아서 해당 학생
+		  객체 정보를 화면에 ㄱㄱ
+	*/
+	
+	// let student = {}
+	const student = {}
+	
+	student.studNo = prompt("학번");
+	student.studName = prompt("이름");
+	student.studMajor = prompt("학과");
+	student.studPhone = prompt("연락처");
+	student.studAddr = prompt("주소");
+	
+	document.write(`<ul>`);
+	document.write(`<li>학번: ${student.studNo} </li>`);
+	document.write(`<li>이름: ${student.studName} </li>`);
+	document.write(`<li>학과: ${student.studMajor} </li>`);
+	document.write(`<li>연락처: ${student.studPhone} </li>`);
+	document.write(`<li>주소: ${student.studAddr} </li>`);
+	document.write(`</ul>`);
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

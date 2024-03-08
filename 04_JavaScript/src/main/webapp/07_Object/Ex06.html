@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/*
+		내장 객체: 자바스크립트에서 제공해주고 있는 객체.
+		예) Date, Math 객체가 대표적인 내장 객체.
+		
+	*/
+	//date 객체: 날짜와 시간과 관련된 정보를 제공해주는 객체.
+	let date = new Date();
+		
+		console.log(typeof(date)); //Object(객체)
+		//getYear() 함수: 기준 년도를 1900년으로 삼음
+		//				 1900년을 0으로 인식함. 많이안씀
+		document.write(`현재 년도: ${date.getYear()+1900}년 <br>`);
+		
+		document.write(`현재 년도: ${date.getFullYear()}년 <br>`);
+		
+		document.write(`현재 월: ${date.getMonth()+1}월 <br>`);
+		document.write(`현재 일: ${date.getDate()}일 <br>`);
+		document.write(`<hr>`);
+		
+		//getDay(): 현재 요일을 확인하는 함수.
+		// 정수값으로 반환(0:일요일~6:토요일)
+		switch(date.getDay()) {
+		case 0:
+			document.write(`오늘은 일요일 <br>`);
+			break;
+		case 1:
+			document.write(`오늘은 월요일 <br>`);
+			break;
+		case 2:
+			document.write(`오늘은 화요일 <br>`);
+			break;
+		case 3:
+			document.write(`오늘은 수요일 <br>`);
+			break;
+		case 4:
+			document.write(`오늘은 목요일 <br>`);
+			break;
+		case 5:
+			document.write(`오늘은 금요일 <br>`);
+			break;
+		case 6:
+			document.write(`오늘은 토요일 <br>`);
+			break;
+		
+			
+		}
+		document.write(`<hr>`);
+		
+		//현재사건도 받아보자
+		document.write(`현재 시간은 ${date.getHours()}시`);
+		document.write(`현재 시간은 ${date.getMinutes()}분`);
+		document.write(`현재 시간은 ${date.getSeconds()}초 <br>`);
+		
+		
+		
+		
+		
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

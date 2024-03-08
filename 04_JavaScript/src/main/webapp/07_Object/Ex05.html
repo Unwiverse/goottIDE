@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+		let student; //전역변수
+
+		//학생의 정보를 입력하는 함수
+		function insertStudent() {
+			student = {
+					hakbun: prompt("학번"),
+					name: prompt("이름"),
+					major: prompt("학과"),
+					phone: prompt("연락처"),
+					
+					/* studentInfo : function() {
+						let str = "학번: "+this.hakbun+"<br>"+
+								  "이름: "+this.name+"<br>"+
+								  "학과: "+this.major+"<br>"+
+								  "연락처: "+this.phone //this는 student 객체 가리킴
+						return str;
+					} */
+					//화살표 함수로 선언
+					studentInfo: () => {
+						let str =  "<ul><li>학번: "+student.hakbun+"</li>"+
+									   "<li>이름: "+student.name+"</li>"+
+									   "<li>학과: "+student.major+"</li>"+
+									   "<li>연락처: "+student.hakbun+"</li></ul>";
+									   return str;
+										}
+			}		
+			
+		} //인서트 함수 end
+		//학생 정보 출력 함수
+		function printStudent() {
+			if(student != null) {
+				//inneHTML : 요소 안에 있는 태그와 내용을 같이 가져오는 속성
+				document.getElementById("output").innerHTML
+						= student.studentInfo(); //DOM할 때 다시함
+				
+			} else {
+				alert("학생 정보를 써");
+			}
+		}
+</script>
+
+</head>
+<body>
+	<h2>출력창</h2>
+	<div id="output"></div>
+	<br>
+	<input type="button" value="입력" onclick="insertStudent()">
+	<input type="button" value="출력" onclick="printStudent()">
+	
+</body>
+</html>

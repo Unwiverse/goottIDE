@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//키보드로 두 수의 연산자를 입력받아 연산자에 해당하는 
+	// 함수를 호출해 연산 결과를 화면에 ㄱㄱ
+		let su1= 9;	
+		let su2= 3;
+		var oper;
+		function cal() {
+		
+		oper = prompt("기호 입력"); //oper 초기화했으면 함수 안에서 재할당
+	 	switch(oper) {
+	 	case "+":
+	 		document.write(`연산 결과: ${su1+su2} <br>`);
+	 		break;
+	 	case "-":
+	 		document.write(`${su1-su2} <br>`);
+	 		break;
+	 	case "*":
+	 		document.write(`${su1*su2} <br>`);
+	 		break;
+	 	case "/":
+	 		document.write(`${su1/su2} <br>`);
+	 		break;
+	 	default: 
+	 		document.write(`올바른 연산자 입력!`);
+	 	}
+	 }
+	
+</script>
+</head>
+<body>
+
+<input type="button" onclick="cal()" value="test">
+
+</body>
+</html>
