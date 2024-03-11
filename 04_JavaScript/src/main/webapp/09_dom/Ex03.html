@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+    fieldset {
+        width: 300px;
+    }
+</style>
+<script type="text/javascript">
+// 문서의 body 부분을 읽고 자바스크립트를 실행하라는 의미
+window.onload = () => {
+    // 웹 문서의 특정한 선택자(id)에 접근하는법.
+    let productNAME = document.getElementById("product");
+
+    productNAME.addEventListener("click", function() {
+        console.log('상품명: ' + productNAME.value);
+    });
+};
+</script>
+</head>
+<body>
+    <div align="center">
+        <form name="order">
+        <fieldset>
+            <legend>상품 정보</legend>
+            
+            <ul>
+                <li>상품: <input type="text" id="product" name="product"></li>
+                <li>수량: <input type="number" min="1" max="50"></li>
+                <li> <input type="submit" value="주문"></li>
+            </ul>
+        </fieldset>
+        </form>
+    
+    </div>
+</body>
+</html>

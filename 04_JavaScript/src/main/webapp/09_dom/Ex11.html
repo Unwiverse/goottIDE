@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	onload = () => {
+		//문서에서 요소를 찾는 방법 -4번째
+		//4. querySelector("선택자");
+		//   ==> 선택자 이름과 일치하는 요소를 가져오는 함수.
+		let head = document.querySelector("#head");
+		//h1 태그의 스타일을 변경해보자.
+		head.style.width = "400px";
+
+		head.setAttribute("style", "border: solid 2px black;"
+		+ "color: red;" + "background-color: black;"+"font-family:궁서체;"
+		+ "text-align: center;");
+	
+		head.innerHTML = ".Goetia";
+		}
+</script>
+</head>
+<body>
+	<h1 id="head">HEADER FEATHER</h1>
+</body>
+</html>

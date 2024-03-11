@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+/*
+ * [문제] 아래와 같이 DOM을 추가 ㄱㄱ
+ 	<h2>제목<h2>
+ 	<p>본문임</p>
+ */
+ onload = () => {
+	 let title_element = document.createElement("h2");
+	 let title = document.createTextNode("제목");
+	 title_element.appendChild(title);
+	 document.body.appendChild(title_element);
+	 
+	 let p_tag = document.createElement("p");
+	 let p_text = document.createTextNode("본문임");
+	 p_tag.appendChild(p_text);
+	 document.body.appendChild(p_tag);
+ }
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

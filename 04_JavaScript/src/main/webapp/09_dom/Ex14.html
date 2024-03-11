@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function check() {
+		
+		let userId = document.querySelector("#id");
+		let userPwd = document.querySelector("#pwd");
+		let userAddr = document.querySelector("#addr");
+		
+		// 아이디 입력 창에 입력 여부를 확인
+		if(userId.value =="") {
+			alert("아이디 써라 ㅡㅡ ");
+			userId.focus();
+			return false; //데이터 전송 차단됨.
+			
+		} else if(userPwd.value=="") {
+			alert("뭐하는데 ㅡㅡ");
+			userPwd.focus();
+			return false;
+			
+		} else if(userAddr.value=="") {
+			alert("장난하냐????");
+			userAddr.focus();
+			return false;
+		}
+		
+
+	}
+</script>
+</head>
+<body>
+
+	<div align="center">
+		<h2>회원가입 폼 페이지</h2>
+		<form action="http://www.google.com" onsubmit="return check()">
+		<table border="1">
+		<tr>
+			<th>아이디</th>
+			<td>
+				<input type="text" id="id">
+			</td>
+			</tr>
+			<tr>
+			<th>비밀번호</th>
+			<td>
+				<input type="password" id="pwd">
+			</td>
+			</tr>
+			<tr>
+			<th>주소</th>
+			<td>
+				<input type="text" id="addr">
+			</td>
+			</tr>
+			<tr>
+	
+			<td colspan="2" align="center">
+			
+				<input type="submit" value="회원가입">&nbsp;&nbsp;&nbsp;
+				<input type="reset" value="다시">
+			</td>
+			</tr>
+				
+		</table>
+		
+		</form>
+	</div>
+
+</body>
+</html>

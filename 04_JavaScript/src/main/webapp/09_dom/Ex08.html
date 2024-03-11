@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+onload = () => {
+	//문서에서 특정한 요소를 찾는 방법이 -> 3가지
+	// 1. getElementById("id이름");
+	//    ==> 문서에서 특정 id를 가진 요소 찾기
+	let header1 = document.getElementById("header_1");
+	let header2 = document.getElementById("header_2");
+	header1.innerHTML = 'header_1 id를 가진 요소';
+	header2.innerHTML = "<i>Age of Empires</i>";
+}
+
+</script>
+</head>
+<body>
+
+	<h1 id="header_1">Header_1</h1>
+	<h1 id="header_2">Header_2</h1>
+
+</body>
+</html>

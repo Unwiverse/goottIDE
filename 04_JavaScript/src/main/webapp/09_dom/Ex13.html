@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<script type="text/javascript">
+	onload = () => {
+	let button = document.querySelector("#btn");
+	button.onclick = () => {
+		let text = document.querySelector("#txt1");
+		if(text == "") {
+			alert("내용을 입력하세요");
+			
+		} else {
+			document.querySelector("#txt2").value = text.value;
+		}
+	}
+	
+}
+	
+</script>
+</head>
+<body>
+	<h2>
+		버튼을 누르면 첫번째 텍스트 창에 입력된 내용을 <br>
+		두번째 텍스트 창으로 복사하기
+	</h2>
+	<input type="text" id="txt1"><br>
+	<input type="text" id="txt2"><br> <br>
+	<input type="button" id="btn" value="복사">
+	
+</body>
+</html>

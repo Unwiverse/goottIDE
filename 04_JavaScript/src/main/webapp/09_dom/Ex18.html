@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript">
+	onload = () => {
+		//#content 노드를 찾자
+		let content = document.querySelector("#content");
+		//#content 노드 이전 영역(#header)을 찾자
+		let pre = content.previousElementSibling;
+		pre.style.border = "3px solid green";
+		//#content 노드 이후 형제 노드를 찾자
+		let next = content.nextElementSibling;
+		next.style.border = "3px solid red";
+		
+	}
+</script>
+</head>
+<body>
+	<div id="sample_page" class="page">
+	샘플 페이지(div id="sample_page" class="page")
+	<div id="header"> 
+	헤더영역(div id="header")
+	</div>
+	<div id="content" class="sample_content">
+	콘텐츠 영역(div id="content" class="sample_content")
+	<div>
+		JavaScript란(div)
+		<p id="data_1">자바스크립트 Core(p, id="data_1")</p>
+		<p id="data_2">자바스크립트 Core(p, id="data_2")</p>
+		<p id="data_3">자바스크립트 Core(p, id="data_3")</p>
+	</div>
+	
+	<div class="contens_data">
+		JavaScript에서 배울 내용(div class="content_data")
+		<p>1. JavaScript BOM(p)</p>
+		<p>2. JavaScript DOM(p)</p>
+	</div> <!-- class="content_data" end -->
+	
+	</div> <!-- id="content" class="sample_sample" end -->
+	<div id="footer">
+	푸터 영역(div id="footer")
+	</div>
+	</div>	<!-- id="sample_page" class="page" end -->
+</body>
+</html>

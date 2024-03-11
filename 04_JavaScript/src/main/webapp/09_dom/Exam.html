@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquey-3.6.3.js"></script>
+<script type="text/javascript">
+//전역변수 선언
+	let img1=null;
+	let count = 0;
+	onload = () => {
+		this.init(); //초기화시키는 함수.
+		this.start(); //타이머 함수
+	}
+	//초기화 함수
+	function init() {
+		img1 = document.querySelector("#img1");
+	}
+	//타이머함수
+	function start() {
+		//1초마다 한 번씩 ChangeImage() 함수를 호출할 예정.
+		setInterval(ChangeImage, 1000);
+	}
+	//이미지 변경은 이 함수에서 진행
+	function changeImage() {
+		count++;
+		// 현재 count변수 값이 10 이상이면 다시 1로 설정
+		if(count >= 10) {
+			count= 1;
+		}
+		//이미지 변경 
+		img1.src = "../images/img" +count+".jpg";
+	}
+
+</script>
+</head>
+<body>
+	
+	<div align="center">
+		<h2>이미지를 순차적으로 변경</h2>
+		
+		<div id="panel">
+			<img src="../images/img.jpg" id="img" alt="이미지">
+		
+		</div>
+		
+	
+	</div>
+
+</body>
+</html>
