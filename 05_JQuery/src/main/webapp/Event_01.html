@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- CDN(Content Delivery Network)을 이용하여 사용하는 방법. -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" 
+	integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+	crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+	/*
+	  이벤트 종류
+	  1. 마우스 이벤트
+	     ==> 사용자가 마우스 버튼을 눌렀을 때 발생하는 이벤트.
+	     
+	  2. 키보드 이벤트
+	     ==> 사용자가 키보드를 눌렀을 때 발생하는 이벤트.
+	         이 때 눌린 키에 대한 정보가 이벤트에 담김.
+	         
+	  3. 태그 요소 고유 이벤트
+	     ==> 요소마다 발생하는 고유의 이벤트.
+	     
+	  4. 사용자 정의 이벤트
+	     ==> 개발자가 직접 만들어 사용하는 이벤트.
+	*/
+
+	$(() => {
+		// 이벤트 형식
+		// $("요소선택").on("이벤트이름", 이벤트리스너)
+		// ==> 이벤트리스너는 함수이름(콜백함수)을 넣어서 호출하여 실행함.
+		//     콜백함수 대신에 무명(익명) 클래스를 이용하여 처리 하기도 함.
+		
+		$(".btn").on("click", function () {
+			alert("이벤트에 오신 걸 환영합니다.!!!");
+		});
+	});
+	     
+	function alertFunction() {
+		alert("이벤트에 오신 걸 환영합니다.!!!");
+	}
+
+</script>
+</head>
+<body>
+
+	<button class="btn">확인</button>
+	
+</body>
+</html>
